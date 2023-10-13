@@ -20,7 +20,7 @@ const Cars = () => {
                     <h1>Cars</h1>
                     <input
                         type="search"
-                        placeholder="Cars"
+                        placeholder="Search"
                         id="input"
                         value={searchValue}
                         onChange={(e) => setSearchValue(e.target.value)}
