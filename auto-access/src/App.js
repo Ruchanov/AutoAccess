@@ -1,10 +1,10 @@
 import Header from "./components/Header";
+import Pagemain from "./components/Pagemain";
 
 function App() {
   return (
     <div className="wrapper">
-      <Header />
-      {/* <MainPage /> */}
+      <Pagemain />
     </div>
 
   );
