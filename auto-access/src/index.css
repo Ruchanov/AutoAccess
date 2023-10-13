@@ -10,48 +10,41 @@ body{
   font-weight: 300;
 }
 
-.wrapper{
-  width: 1280px;
-  margin: 50px
+
+header {
+  background-color: #333; 
+  color: #fff; 
+  padding: 1%;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center; 
+  margin: 1%;
+  border-radius: 4px;
 }
 
-header .logo{
-  font-weight: 600;
-  font-size: 20px;
+.top-header {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+  width: 100%; 
 }
 
-header .presentation{
-  margin: 5%;
-  margin-left: auto;
-  background: url("images/rolls-royce.webp") no-repeat;
-  width: 100%;
-  height: 650px;
-  background-size: cover;
-  background-position: center center;
-  background-blend-mode: multiply;
-  background-color: #bcbcbb;
-  position: relative;
+.logo, .main-header-menu, .second-menu {
+  margin: 0 10px; 
 }
-header .presentation::after{
-  content: 'The best cars for your convenience';
-  position: absolute;
-  top: 100px;
-  left: 50px;
-  width: 300px;
-  font-size: 40px;
-  font-weight: 600;
-  color: white;
+
+.main-menu {
+  list-style: none; 
+  padding: 0; 
+  display: flex; 
 }
-header .presentation::before{
-  content: 'Hot offers for selling cars in Kazakhstan';
-  position: absolute;
-  top: 250px;
-  left: 50px;
-  width: 300px;
-  font-size: 15px;
-  font-weight: 300;
-  color: white;
+
+.main-menu li {
+  margin: 0 10px; 
+  cursor: pointer;
 }
+
+
 footer{
   text-align: center;
   margin-top: 100px;

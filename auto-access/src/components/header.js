@@ -3,15 +3,26 @@ import React from "react";
 export default function Header(){
     return(
         <header>
-            <div>
-                <span className= 'logo'>Auto Access</span>
-                <ul className='nav'>
-                    <li>About</li>
-                    <li>Contacts</li>
-                    <li></li>
-                </ul>
+            <div class="top-header">
+                <div class="logo">
+                    <p>AutoAccess</p>    
+                </div>
+                <div class="main-header-menu">
+                    <ul class="main-menu">
+                        <li>Cars</li>
+                        <li>Rental</li>
+                        <li>Spare Parts</li>
+                        <li>Repairs and services</li>
+                    </ul>
+                </div>  
+                <div class="second-menu">
+                <ul class="main-menu">
+                        <li>About</li>
+                        <li>Support</li>
+                        <li>Login</li>
+                    </ul>
+                </div>
             </div>
-            <div className='presentation'></div>
         </header>
     )
 }
