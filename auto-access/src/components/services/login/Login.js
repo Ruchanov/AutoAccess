@@ -12,15 +12,15 @@ const Login = () => {
             </div>
             <div className="inputs">
                 {action==="Login"?<div></div>:<div className="input">
-                    <img src= './person.png' alt="person_image"/>
+                    <img src= '/images/person.png' alt="person_image"/>
                     <input type="text" placeholder="Name"/>
                 </div>}
                 <div className="input">
-                    <img src='/email.png' alt="email_image"/>
+                    <img src='/images/email.png' alt="email_image"/>
                     <input type="email" placeholder="Email"/>
                 </div>
                 <div className="input">
-                    <img src='/password.png' alt="password_image"/>
+                    <img src='/images/password.png' alt="password_image"/>
                     <input type="password" placeholder="Password"/>
                 </div>
                 {action==="Sign Up"?<div></div>:

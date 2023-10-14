@@ -89,3 +89,8 @@ input .input{
     background: #eaeaea;
     color: #676767;
 }
+
+img{
+    width: 17px;
+    height: 17px;
+}
