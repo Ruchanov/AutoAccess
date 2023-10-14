@@ -1,0 +1,36 @@
+header {
+    background-color: #dba469; /* Цвет фона вашего заголовка */
+    color: #fff; /* Цвет текста */
+    padding: 10px; /* Отступы вокруг содержимого header */
+    display: block; /* Используем flexbox для выравнивания элементов */
+    justify-content: space-between; /* Равномерное распределение элементов по ширине header */
+    align-items: center; /* Выравнивание элементов по вертикали по центру header */
+    margin: 1%;
+    border-radius: 50%;
+  }
+  
+  .top-header {
+    display: flex; /* Используем flexbox для выравнивания элементов внутри .top-header */
+    justify-content: space-between; /* Равномерное распределение элементов по ширине .top-header */
+    align-items: center; /* Выравнивание элементов по вертикали по центру .top-header */
+    width: 100%; /* Чтобы элементы растягивались на всю ширину header */
+  }
+  
+  /* Стили для .logo, .main-header-menu и .second-menu можно добавить по вашему усмотрению */
+  .logo, .main-header-menu, .second-menu {
+    margin: 0 10px; /* Отступы между элементами */
+  }
+  
+  .main-menu {
+    list-style: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем внутренние отступы у списка */
+    display: flex; /* Используем flexbox для выравнивания элементов списка */
+  }
+  
+  .main-menu li {
+    margin: 0 10px; /* Отступы между элементами списка */
+    cursor: pointer; /* Изменение вида курсора при наведении на элементы списка */
+  }
+  
+  /* Дополнительные стили и структура могут быть настроены в соответствии с вашими потребностями. */
+  

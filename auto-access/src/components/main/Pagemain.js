@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import Header from "./Header";  
+import Header from "./Header";
 import './Pagemain.css'
 
-export default function Pagemain(){
+export default function Pagemain() {
     const [currentImage, setCurrentImage] = useState(0);
 
     const images = [
@@ -21,16 +21,17 @@ export default function Pagemain(){
         return () => clearInterval(intervalId);
     }, [nextImage]);
 
-    return(
-        <pagemain>
+    return (
+        <div className="page-container">
             <Header />
-            <div class = "explanationOfCompany">
+            <div className="explanationOfCompany">
+                <img src="/images/logo.jpeg"></img>
                 <h1>Driving the Path to Happiness</h1>
                 <p>Search, Choose, Drive</p>
             </div>
-            <div class = "image-container">
+            <div className="image-container">
                 <img src={images[currentImage]} alt={`Image ${currentImage}`} />
             </div>
-        </pagemain>
+        </div>
     )
 }

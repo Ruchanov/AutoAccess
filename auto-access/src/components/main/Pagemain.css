@@ -3,7 +3,8 @@
     height: 50%;
     overflow: hidden;
     position: relative;
-    margin-left: 42%;
+    margin-left: 45%;
+    margin-top: -29%;
 }
   
 .image-container img {
@@ -17,15 +18,23 @@
 }
 
 h1 {
-    font-size: 32px;
+    font-size: 30px;
     margin-bottom: 10px;
+    color: #777;
 }
 
 p {
-    font-size: 20px;
-    color: #777;
+    font-size: 30px;
+    color: #e26c29;
 }  
 .explanationOfCompany{
     margin-left: 5%;
     /* margin-top: 10%; */
+    max-width: 44%;
+    align-items: center;
+    background-position: center left;
+    margin-top: 5%;
+}
+.explanationOfCompany img{
+    width: 80%
 }
