@@ -44,8 +44,11 @@
     background: #eaeaea;
     border-radius: 6px;
 }
+.input img{
+    margin: 0px 30px;
+}
 
-input .input{
+.input input{
     height: 50px;
     width: 400px;
     background: transparent;
@@ -88,9 +91,4 @@ input .input{
 .gray{
     background: #eaeaea;
     color: #676767;
-}
-
-img{
-    width: 17px;
-    height: 17px;
 }
