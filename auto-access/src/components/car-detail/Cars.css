@@ -1,38 +1,37 @@
-/* Cars.css */
-
 /* Стили для контейнера с машинами (Cars) */
 .main {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-  
-  /* Стили для карточки машины (Car) */
-  .item {
+    justify-content: center; /* Центрирование по горизонтали */
+    text-align: center; /* Центрирование содержимого по горизонтали */
+}
+
+/* Стили для карточки машины (Car) */
+.item {
+    display: inline-block; /* Отображение как блоки внутри контейнера */
     border: 1px solid #dba469;
-    margin: 10px;
+    margin: 1%; /* Отступы между элементами */
     padding: 10px;
-    width: 300px;
-  }
-  
-  .item img {
+    width: calc(30% - 2%); /* Рассчитываем ширину для 3 карточек в ряду с отступами */
+    vertical-align: top; /* Выравнивание элементов по верхнему краю */
+    text-align: left; /* Выравнивание текста слева */
+}
+
+.item img {
     max-width: 100%;
-  }
-  
-  /* Стили для заголовка и описания машины */
- .item h2 {
+}
+
+/* Стили для заголовка и описания машины */
+.item h2 {
     font-size: 1.5rem;
     margin: 0;
-  }
-  
-  p {
+}
+
+p {
     font-size: 14px;
     margin: 5px 0;
-  }
-  
-  b {
+}
+
+b {
     color: #007bff;
-  }
-  
-  
+}
