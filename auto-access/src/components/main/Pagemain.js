@@ -34,6 +34,23 @@ export default function Pagemain() {
             <div className="image-container">
                 <img src={images[currentImage]} alt={`Image ${currentImage}`} />
             </div>
+            <footer>
+                <div className="last">
+                    <ol>
+                        <li>О компании «Auto Access»</li>
+                        <li><a href="#">Написать в Службу заботы</a></li>
+                        <li><a href="#">Работа в «Auto Access»</a></li>
+                        <li><a href="#">Карта сайта</a></li>
+                        <li><a href="#">Рекламодателям</a></li>
+                        <li><a href="#">Правила размещения объявлений</a></li>
+                        <li><a href="#">Пользовательское соглашение</a></li>
+                        <li><a href="#">Скачать приложение</a></li>
+                        <li><a href="#">Мобильная версия сайта</a></li>
+                        <li><a href="#">Следите за нашими новостями</a></li>
+                        <li><a href="#">Instagram YouTube Telegram TikTok VK Facebook</a></li>
+                    </ol>
+                </div>
+            </footer>
         </div>
     );
 }

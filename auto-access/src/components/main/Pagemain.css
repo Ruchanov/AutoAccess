@@ -38,3 +38,51 @@ p {
 .explanationOfCompany img{
     width: 80%
 }
+last{
+    margin-top: 80px;
+    padding-top:10px;
+    position: relative;
+    text-align: center;
+    padding-left:300px;
+    /* max-width: 1000px; */
+    margin:0 auto;
+    background-color:white ;
+}
+.last ol{
+    display:flex;
+    flex-wrap:wrap;
+    list-style-type: none;
+    padding:10px 0;
+    width:70%;
+}
+.last ol:first-child{
+    border-bottom: 1px solid rgb(221, 223, 226);
+}
+.last ol:first-child li:last-child button{
+    background-color: rgb(245, 246, 247);
+    border: 1px solid rgb(204, 208, 213);
+    outline: none;
+    color:rgb(75, 79, 86);
+    padding: 0 8px;
+    font-weight: 700;
+    font-size:16px;
+
+}
+.last ol li{
+    padding-right: 15px;
+    padding-bottom:5px;
+    font-size:12px;
+    color:rgb(56, 88, 152);
+}
+.last ol li a{
+    text-decoration: none;
+    color:rgb(56, 88, 152);
+}
+.last ol li a:hover{
+    text-decoration: underline;
+}
+.last small{
+    text-align: left;
+
+    color:rgb(56, 88, 152);
+}
