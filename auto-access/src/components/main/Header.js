@@ -1,27 +1,29 @@
 import React from "react";
-import "./Header.css"
-export default function Header(){
-    return(
-        <header>
-        <div class="top-header">
-            <div class="logo">
-                <p>AutoAccess</p>    
-            </div>
-            <div class="main-header-menu">
-                <ul class="main-menu">
-                    <li>Cars</li>
-                    <li>Spare Parts</li>
-                    <li>Repairs and services</li>
-                </ul>
-            </div>
-            <div class="second-menu">
-            <ul class="main-menu">
-                    <li>About</li>
-                    <li>Support</li>
-                    <li><a href="/login">Login</a></li>
-                </ul>
-            </div>
+import "./Header.css";
+export default function Header({ handleSupportClick }) { 
+  return (
+    <header>
+      <div className="top-header">
+        <div className="logo">
+          <p>AutoAccess</p>
         </div>
-        </header>
-    )
+        <div className="main-header-menu">
+          <ul className="main-menu">
+            <li>Cars</li>
+            <li>Spare Parts</li>
+            <li>Repairs and services</li>
+          </ul>
+        </div>
+        <div className="second-menu">
+          <ul className="main-menu">
+            <li>About</li>
+            <li onClick={handleSupportClick}>Support</li>
+            <li>
+              <a href="/login">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+  );
 }

@@ -4,7 +4,10 @@
     overflow: hidden;
     position: relative;
     margin-left: 45%;
-    margin-top: -29%;
+    margin-top: -23%;
+}
+.page-container{
+    margin-top: 8%;
 }
   
 .image-container img {
@@ -39,14 +42,15 @@ p {
     width: 80%
 }
 last{
-    margin-top: 80px;
+    margin-top: 100%;
     padding-top:10px;
     position: relative;
     text-align: center;
     padding-left:300px;
     /* max-width: 1000px; */
-    margin:0 auto;
+    /* margin:0 auto; */
     background-color:white ;
+
 }
 .last ol{
     display:flex;

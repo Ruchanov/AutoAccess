@@ -1,20 +1,25 @@
 header {
-    background-color: #dba469; /* Цвет фона вашего заголовка */
-    color: #fff; /* Цвет текста */
-    /* padding: 1px; */
-    display: block; /* Используем flexbox для выравнивания элементов */
-    justify-content: space-between; /* Равномерное распределение элементов по ширине header */
-    align-items: center; /* Выравнивание элементов по вертикали по центру header */
-    margin: 1%;
-    /* border-radius: 10%; */
-  }
-  
-  .top-header {
-    display: flex; /* Используем flexbox для выравнивания элементов внутри .top-header */
-    justify-content: space-between; /* Равномерное распределение элементов по ширине .top-header */
-    align-items: center; /* Выравнивание элементов по вертикали по центру .top-header */
-    width: 100%; /* Чтобы элементы растягивались на всю ширину header */
-  }
+  background-color: #dba469;
+  color: #fff;
+  padding: 0 1px;
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1%;
+  font-size: 16px;
+  border-radius: 10px; /* Add border-radius to round the corners */
+  overflow: hidden;
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  border-radius: 10px; /* Add border-radius to round the corners */
+  overflow: hidden;
+}
   
   /* Стили для .logo, .main-header-menu и .second-menu можно добавить по вашему усмотрению */
   .logo, .main-header-menu, .second-menu {
