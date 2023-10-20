@@ -1,11 +1,11 @@
-    import React from "react";
-    import Header from "./components/main/Header";
-    import Pagemain from "./components/main/Pagemain";
-    import Cars from "./components/car-detail/Cars";
+import React from "react";
+import Header from "./components/main/Header";
+import Pagemain from "./components/main/Pagemain";
+import Cars from "./components/car-detail/Cars";
 
     class App extends React.Component{
         constructor(props) {
-            super(props)
+            super(props);
             this.state = {
                 cars:[
                     {
@@ -13,7 +13,7 @@
                         name: "BMW",
                         model: "M5",
                         images: "m5.png",
-                        desc: "2021г., 4.4литр, КПП автомат, цвет: красный, пробег: 13000км",
+                        desc: "2021г., 4.4литр, КПП автомат, цвет: синий, пробег: 13000км",
                         category: "passenger cars",
                         price: "$35000"
                     },
@@ -22,7 +22,7 @@
                         name: "Toyota",
                         model: "Camry",
                         images: "camry.png",
-                        desc: "2021г., 2.5литр, КПП автомат, цвет: белый, пробег: 37000км",
+                        desc: "2021г., 2.5литр, КПП автомат, цвет: серый, пробег: 37000км",
                         category: "passenger cars",
                         price: "$15000"
                     },
@@ -103,7 +103,7 @@
             return (
                 <div className="wrapper">
                     <Pagemain/>
-                    <Cars cars={this.state.cars}/>
+                    <Cars cars={this.state.cars} />
                 </div>
 
             );
