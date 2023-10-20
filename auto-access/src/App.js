@@ -7,7 +7,8 @@ class App extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
-            items:[]
+            items:[],
+            spares:[]
         }
     }
     render() {
@@ -107,5 +108,80 @@ App.defaultProps = {
         category: "off-roader",
         price: "$43000"
     },],
+    spares:[
+        {
+            id:1,
+            name: "Yokohama",
+            model:"DB E70B",
+            image: "db.jpg",
+            desc: "сезонность: зимние, диаметр диска: 17, индекс максимальной скорости: T (190 км/ч)",
+            price: "$2000"
+        },
+        {
+            id:2,
+            name: "MICHELIN ",
+            model:"X-Ice North",
+            image: "michelin.jpg",
+            desc: "сезонность: зимние, диаметр диска: 16, индекс максимальной скорости: T (190 км/ч)",
+            price: "$2800"
+        },
+        {
+            id:3,
+            name: "Bars",
+            model:"Silver",
+            image: "akk.jpg",
+            desc: "назначение: для легковых автомобилей,емкость: 75.0 Ач, полярность: обратная, напряжение: 12 В",
+            price: "$1500"
+        },
+        {
+            id:4,
+            name: "Motor",
+            model:"Electric",
+            image: "motor.jpg",
+            desc: "тип: бензиновый, номер OEM: 21214100026032, марка автомобиля: Lada",
+            price: "$8600"
+        },
+        {
+            id:5,
+            name: "Mitsubishi",
+            model:"4A91",
+            image: "motor2.jpg",
+            desc: "тип: бензиновый, номер OEM: 4A91, марка автомобиля: Mitsubishi",
+            price: "$8000"
+        },
+        {
+            id:6,
+            name: "Tomasetto",
+            model:"AT-09 Nordic",
+            image: "reductor.jpg",
+            desc: "тип: редуктор, артикул производителя: AT-09 Nordic",
+            price: "$980"
+        },
+        {
+            id:7,
+            name: "Lovato",
+            model:"238000081",
+            image: "lovato.jpg",
+            desc: "тип: газовая форсунка, артикул производителя: 238000081, вес: 1.0 кг",
+            price: "$1500"
+        },
+        {
+            id:8,
+            name: "Tomasetto",
+            model:"MV4000",
+            image: "mv.jpg",
+            desc: "тип: мультиклапан, артикул производителя: MV4000, вес: 0.03 кг",
+            price: "$1200"
+        },
+        {
+            id:9,
+            name: "Felix Carbox",
+            model:"red",
+            image: "red.jpg",
+            desc: "назначение: для легкового транспорта, тип: карбоксилатный, концентрат: Нет,объем упаковки: 10.0 л",
+            price: "$800"
+        }
+    
+    ]
 };
 export default App;

@@ -13,6 +13,7 @@ const AppRouter = () => {
                 <Route path="/" element={<Pagemain />} />
                 <Route path="/cars" element={<Cars items={App.defaultProps.items}/>} />
                 <Route path="/login" element={<Login/>} />
+                <Route path="/spare" element={<Cars items={App.defaultProps.spares}/>} />
             </Routes>
         </Router>
     );

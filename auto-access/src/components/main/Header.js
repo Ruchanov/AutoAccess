@@ -10,7 +10,7 @@ export default function Header({ handleSupportClick }) {
         <div className="main-header-menu">
           <ul className="main-menu">
             <li><a href="/cars">Cars</a></li>
-            <li>Spare Parts</li>
+            <li><a href="/spare">Spare Parts</a></li>
             <li>Repairs and services</li>
           </ul>
         </div>
