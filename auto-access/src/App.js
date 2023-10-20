@@ -42,7 +42,7 @@ App.defaultProps = {
         id:3,
         name: "Hyundai",
         model: "Sonata",
-        images: "sonata.png",
+        images: "sonata.jpg",
         desc: "2021г., 2.5литр, КПП автомат, цвет: черный, пробег: 20000км",
         category: "passenger cars",
         price: "$18000"
@@ -51,7 +51,7 @@ App.defaultProps = {
         id:4,
         name: "KIA",
         model: "K5",
-        images: "k5.png",
+        images: "k5.jpg",
         desc: "2023г., 2.5литр, КПП автомат, цвет: белый, пробег: 2000км",
         category: "passenger cars",
         price: "$17000"
@@ -60,7 +60,7 @@ App.defaultProps = {
         id:5,
         name: "Chevrolet",
         model: "Camaro",
-        images: "camaro.png",
+        images: "camaro.jpg",
         desc: "2019г., 3.6литр, КПП автомат, цвет: синий, пробег: 49000км",
         category: "passenger cars",
         price: "$35000"
@@ -69,7 +69,7 @@ App.defaultProps = {
         id:6,
         name: "Toyota",
         model: "Land Cruiser",
-        images: "lc.png",
+        images: "lc.jpg",
         desc: "2021г., 4.6литр, КПП автомат, цвет: белый, пробег: 53000км",
         category: "off-roader",
         price: "$50000"
@@ -77,7 +77,7 @@ App.defaultProps = {
         id:7,
         name: "Cadillac",
         model: "Escalade",
-        images: "escalade.png",
+        images: "escallade.png",
         desc: "2023г, 6.2литр, КПП автомат, цвет: черный, пробег: 12000км",
         category: "off-roader",
         price: "$65000"
@@ -85,7 +85,7 @@ App.defaultProps = {
         id:8,
         name: "Lexus",
         model: "LX570",
-        images: "lx.png",
+        images: "lx570.jpg",
         desc: "2016г, 5.7литр, КПП автомат, цвет: белый, пробег: 120000км",
         category: "off-roader",
         price: "$65000"
@@ -93,7 +93,7 @@ App.defaultProps = {
         id:9,
         name: "Infiniti",
         model: "QX80",
-        images: "car4.png",
+        images: "car4.webp",
         desc: "2016г, 5.6литр, КПП автомат, цвет: черный, пробег: 62000км",
         category: "off-roader",
         price: "$57000"
