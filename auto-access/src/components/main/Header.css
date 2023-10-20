@@ -6,7 +6,7 @@ header {
     justify-content: space-between; /* Равномерное распределение элементов по ширине header */
     align-items: center; /* Выравнивание элементов по вертикали по центру header */
     margin: 1%;
-    border-radius: 50%;
+    /* border-radius: 10%; */
   }
   
   .top-header {

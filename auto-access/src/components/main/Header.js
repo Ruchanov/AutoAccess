@@ -18,7 +18,7 @@ export default function Header(){
             <ul class="main-menu">
                     <li>About</li>
                     <li>Support</li>
-                    <li>Login</li>
+                    <li><a href="/login">Login</a></li>
                 </ul>
             </div>
         </div>

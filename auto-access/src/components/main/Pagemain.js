@@ -1,6 +1,6 @@
 // Pagemain.js
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom"; // Импортируйте компонент Link
+import { Link } from "react-router-dom"; 
 import Header from "./Header";
 import './Pagemain.css'
 
@@ -30,11 +30,6 @@ export default function Pagemain() {
                 <img src="/images/logo.jpeg" alt="Company Logo" />
                 <h1>Driving the Path to Happiness</h1>
                 <p>Search, Choose, Drive</p>
-                <div>
-                    <Link to="/login">
-                        <button className="custom-login-button">Login</button>
-                    </Link>
-                </div>
             </div>
             <div className="image-container">
                 <img src={images[currentImage]} alt={`Image ${currentImage}`} />
