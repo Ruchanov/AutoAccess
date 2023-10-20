@@ -2,14 +2,14 @@ import React from "react";
 import "./Header.css";
 export default function Header({ handleSupportClick }) { 
   return (
-    <header>
+    <header className="hh">
       <div className="top-header">
         <div className="logo">
           <p>AutoAccess</p>
         </div>
         <div className="main-header-menu">
           <ul className="main-menu">
-            <li>Cars</li>
+            <li><a href="/cars">Cars</a></li>
             <li>Spare Parts</li>
             <li>Repairs and services</li>
           </ul>

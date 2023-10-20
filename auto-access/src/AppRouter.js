@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Pagemain from './components/main/Pagemain';
 import Cars from "./components/car-detail/Cars";
 import Login from "./components/services/login/Login";
+import App from './App';
 
 
 const AppRouter = () => {
@@ -10,7 +11,7 @@ const AppRouter = () => {
         <Router>
             <Routes>
                 <Route path="/" element={<Pagemain />} />
-                <Route path="/cars" element={<Cars />} />
+                <Route path="/cars" element={<Cars items={App.defaultProps.items}/>} />
                 <Route path="/login" element={<Login/>} />
             </Routes>
         </Router>

@@ -1,4 +1,4 @@
-header {
+.hh {
   background-color: #dba469;
   color: #fff;
   padding: 0 1px;
@@ -24,6 +24,11 @@ header {
   /* Стили для .logo, .main-header-menu и .second-menu можно добавить по вашему усмотрению */
   .logo, .main-header-menu, .second-menu {
     margin: 0 10px; /* Отступы между элементами */
+  
+  }
+  
+  .logo p{
+    font-size: 25px;
   }
   
   .main-menu {

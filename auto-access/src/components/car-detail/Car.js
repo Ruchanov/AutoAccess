@@ -1,10 +1,21 @@
-import {Component} from "react";
+import React, { Component } from 'react';
 
-export class Car extends Component{
-    render() {
-        return (
-            <div>{this.props.car.name}</div>
-        )
-    }
+export class Car extends Component {
+  render() {
+    return (
+      <div className="item">
+        <img src={'/images/' + this.props.item.img}></img>
+        <h2>{this.props.item.name}</h2>
+        <p>{this.props.item.model}</p>
+        <p>{this.props.item.desc}</p>
+        <p>{this.props.item.category}</p>
+        <b>{this.props.item.price}</b>
+        <div className='addToCart'>
+
+        </div>
+      </div>
+    );
+  }
 }
-export default Car
+
+export default Car;
