@@ -1,6 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Header.css";
-export default function Header({ handleSupportClick }) { 
+import { FaShoppingCart } from "react-icons/fa";
+
+export default function Header({ handleSupportClick }) {
   return (
     <header className="hh">
       <div className="top-header">
@@ -9,17 +12,20 @@ export default function Header({ handleSupportClick }) {
         </div>
         <div className="main-header-menu">
           <ul className="main-menu">
-            <li><a href="/cars">Cars</a></li>
-            <li><a href="/spare">Spare Parts</a></li>
+            <li><Link to="/cars">Cars</Link></li>
+            <li><Link to="/spare">Spare Parts</Link></li>
             <li>Repairs and services</li>
           </ul>
         </div>
         <div className="second-menu">
           <ul className="main-menu">
+            <Link to="/korzina">
+              <FaShoppingCart />
+            </Link>
             <li>About</li>
             <li onClick={handleSupportClick}>Support</li>
             <li>
-              <a href="/login">Login</a>
+              <Link to="/login">Login</Link>
             </li>
           </ul>
         </div>

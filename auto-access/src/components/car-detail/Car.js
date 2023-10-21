@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 export class Car extends Component {
+  
   render() {
     return (
       <div className="item">
@@ -11,9 +12,10 @@ export class Car extends Component {
         <p>{this.props.item.desc}</p>
         <p>{this.props.item.category}</p>
         <b>{this.props.item.price}</b>
-        <div className='addToCart'>
+        <button onClick={() => this.props.addToCart(this.props.item)}>
+  Добавить в корзину
+        </button>
 
-        </div>
       </div>
     );
   }

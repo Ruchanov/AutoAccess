@@ -9,6 +9,7 @@
   font-size: 16px;
   border-radius: 10px; /* Add border-radius to round the corners */
   overflow: hidden;
+  position: relative;
 }
 
 .top-header {
@@ -46,3 +47,17 @@
     color: #fff;
     text-decoration: none;
   }
+
+  .second-menu img{
+      max-width: 30px;
+      max-height: 30px;
+  }
+
+  /* .shop-cart{
+    position: absolute;
+    top: 30px;
+    width: 450px;
+    min-height: 100px;
+    background-color: green;
+    z-index: 100;
+  } */
