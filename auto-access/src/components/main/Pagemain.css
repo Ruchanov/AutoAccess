@@ -46,7 +46,7 @@ last{
     padding-top:10px;
     position: relative;
     text-align: center;
-    padding-left:300px;
+    /* padding-left:300px;   */
     /* max-width: 1000px; */
     /* margin:0 auto; */
     background-color:white ;
@@ -89,4 +89,9 @@ last{
     text-align: left;
 
     color:rgb(56, 88, 152);
+}
+footer{
+    position: relative;
+    left: 18%;
+    /* text-align: center; */
 }
