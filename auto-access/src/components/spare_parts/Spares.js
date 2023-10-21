@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './Cars.css';
-import Car from './Car';
+import './Spares.css';
 import Header from '../main/Header';
+import { Spare } from './Spare';
 
 export class Spares extends Component {
   state = {
@@ -33,7 +33,7 @@ export class Spares extends Component {
         <input type="text" placeholder="Search..." value={this.state.searchQuery}
         onChange={this.handleSearchChange}/>
         {this.state.filteredItems.map((el) => (
-        <Car key={el.id} item={el} />
+        <Spare key={el.id} item={el} />
         ))}
       </main>
     );
@@ -42,4 +42,4 @@ export class Spares extends Component {
 
 
 
-export default Cars;
+export default Spares;

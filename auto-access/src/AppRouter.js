@@ -4,6 +4,7 @@ import Pagemain from './components/main/Pagemain';
 import Cars from "./components/car-detail/Cars";
 import Login from "./components/services/login/Login";
 import App from './App';
+import Spares from './components/spare_parts/Spares';
 
 
 const AppRouter = () => {
@@ -13,7 +14,7 @@ const AppRouter = () => {
                 <Route path="/" element={<Pagemain />} />
                 <Route path="/cars" element={<Cars items={App.defaultProps.items}/>} />
                 <Route path="/login" element={<Login/>} />
-                <Route path="/spare" element={<Cars items={App.defaultProps.spares}/>} />
+                <Route path="/spare" element={<Spares items={App.defaultProps.spares}/>} />
             </Routes>
         </Router>
     );
