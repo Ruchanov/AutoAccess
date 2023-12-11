@@ -1,22 +1,24 @@
 import React, { Component } from 'react';
 
-class Korzina extends Component {
-  render() {
-    if (!this.props.cartItems) {
-      return <div>No items in the cart.</div>;
+export class Korzina extends Component {
+    render() {
+        return (
+            <div className="korzina">
+                <h3>Корзина</h3>
+                {this.props.cartItems.map((item) => (
+                    <div key={item.id}>
+                        <img src={'/images/' + item.images} alt={item.name} />
+                        <h2>{item.name}</h2>
+                        <p>{item.model}</p>
+                        <p>{item.desc}</p>
+                        <p>{item.category}</p>
+                        <b>{item.price}</b>
+                        <button onClick={() => this.props.removeFromCart(item)}>Удалить</button>
+                    </div>
+                ))}
+            </div>
+        );
     }
-
-    return (
-      <div>
-        <h2>Корзина</h2>
-        <ul>
-          {this.props.cartItems.map((item, index) => (
-            <li key={index}>{item.name} - {item.price}</li>
-          ))}
-        </ul>
-      </div>
-    );
-  }
 }
 
 export default Korzina;

@@ -6,7 +6,7 @@ import { Spare } from './Spare';
 export class Spares extends Component {
   state = {
     searchQuery: '',
-    filteredItems: this.props.items, // Initialize with all items
+    filteredItems: this.props.items,
   };
 
 
