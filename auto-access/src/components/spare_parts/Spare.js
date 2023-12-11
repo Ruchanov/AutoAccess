@@ -10,11 +10,10 @@ export class Spare extends Component {
         <p>{this.props.item.model}</p>
         <p>{this.props.item.desc}</p>
         <b>{this.props.item.price}</b>
-        {/* <p>njkdscdjlksc</p> */}
-        <div className='addToCart'>
-
+          <button onClick={() => this.props.addToCart(this.props.item)} className="button-add-to-cart">
+              Добавить в корзину
+          </button>
         </div>
-      </div>
     );
   }
 }

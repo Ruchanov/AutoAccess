@@ -52,7 +52,7 @@ App.defaultProps = {
         id:4,
         name: "KIA",
         model: "K5",
-        images: "k5.jpg",
+        images: "kia.png",
         desc: "2023г., 2.5литр, КПП автомат, цвет: белый, пробег: 2000км",
         category: "passenger cars",
         price: "$17000"
@@ -61,7 +61,7 @@ App.defaultProps = {
         id:5,
         name: "Chevrolet",
         model: "Camaro",
-        images: "camaro.jpg",
+        images: "camaro.png",
         desc: "2019г., 3.6литр, КПП автомат, цвет: синий, пробег: 49000км",
         category: "passenger cars",
         price: "$35000"
@@ -78,7 +78,7 @@ App.defaultProps = {
         id:7,
         name: "Cadillac",
         model: "Escalade",
-        images: "escallade.png",
+        images: "escalade.png",
         desc: "2023г, 6.2литр, КПП автомат, цвет: черный, пробег: 12000км",
         category: "off-roader",
         price: "$65000"
@@ -86,7 +86,7 @@ App.defaultProps = {
         id:8,
         name: "Lexus",
         model: "LX570",
-        images: "lx570.jpg",
+        images: "lx570.png",
         desc: "2016г, 5.7литр, КПП автомат, цвет: белый, пробег: 120000км",
         category: "off-roader",
         price: "$65000"
@@ -94,7 +94,7 @@ App.defaultProps = {
         id:9,
         name: "Infiniti",
         model: "QX80",
-        images: "car4.webp",
+        images: "qx.png",
         desc: "2016г, 5.6литр, КПП автомат, цвет: черный, пробег: 62000км",
         category: "off-roader",
         price: "$57000"
@@ -113,7 +113,7 @@ App.defaultProps = {
             id:1,
             name: "Yokohama",
             model:"DB E70B",
-            image: "db.jpg",
+            image: "db.png",
             desc: "сезонность: зимние, диаметр диска: 17, индекс максимальной скорости: T (190 км/ч)",
             price: "$2000"
         },
@@ -121,7 +121,7 @@ App.defaultProps = {
             id:2,
             name: "MICHELIN ",
             model:"X-Ice North",
-            image: "michelin.jpg",
+            image: "db.png",
             desc: "сезонность: зимние, диаметр диска: 16, индекс максимальной скорости: T (190 км/ч)",
             price: "$2800"
         },
@@ -137,7 +137,7 @@ App.defaultProps = {
             id:4,
             name: "Motor",
             model:"Electric",
-            image: "motor.jpg",
+            image: "motor.png",
             desc: "тип: бензиновый, номер OEM: 21214100026032, марка автомобиля: Lada",
             price: "$8600"
         },
@@ -145,7 +145,7 @@ App.defaultProps = {
             id:5,
             name: "Mitsubishi",
             model:"4A91",
-            image: "motor2.jpg",
+            image: "motor2.png",
             desc: "тип: бензиновый, номер OEM: 4A91, марка автомобиля: Mitsubishi",
             price: "$8000"
         },
