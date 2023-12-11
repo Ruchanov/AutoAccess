@@ -16,9 +16,9 @@ const AppRouter = () => {
         <Route path="/login" element={<Login />} />
         <Route
           path="/korzina"
-          element={<Korzina cartItems={App.defaultProps.cartItems} />} // Pass the cartItems here
+          element={<Korzina />} // Корзине можно передать данные через пропсы внутри компонента
         />
-        <Route path="/spare" element={<Spares items={App.defaultProps.spares} />} />
+        <Route path="/spare" element={<Spares items={this.state.cartItems} />} />
       </Routes>
     </Router>
   );

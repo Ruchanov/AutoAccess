@@ -20,7 +20,7 @@ export default function Header({ handleSupportClick }) {
         <div className="second-menu">
           <ul className="main-menu">
             <Link to="/korzina">
-              <FaShoppingCart />
+              <FaShppingCart />
             </Link>
             <li>About</li>
             <li onClick={handleSupportClick}>Support</li>

@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import './Cars.css';
+import { Link, Route, Routes } from 'react-router-dom';
 import Car from './Car';
 import Header from '../main/Header';
 import Korzina from '../korzina/Korzina';
+
 
 export class Cars extends Component {
   constructor(props) {
@@ -44,9 +45,15 @@ export class Cars extends Component {
           onChange={this.handleSearchChange}
         />
         {this.state.filteredItems.map((el) => (
-          <Car key={el.id} item={el} addToCart={this.addToCart} />
+          <div key={el.id}>
+            <Car item={el} addToCart={this.addToCart} />
+            <button onClick={() => this.addToCart(el)}>Добавить в корзину</button>
+          </div>
         ))}
-        <Korzina cartItems={this.state.cartItems} />
+
+        <Link to="/korzina">Перейти в корзину</Link>
+
+        
       </main>
     );
   }

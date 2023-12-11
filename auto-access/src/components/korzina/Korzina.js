@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 
 class Korzina extends Component {
   render() {
-    if (!this.props.cartItems) {
-      return <div>No items in the cart.</div>;
+    if (!this.props.cartItems || this.props.cartItems.length === 0) {
+      return <div>Корзина пуста.</div>;
     }
 
     return (
