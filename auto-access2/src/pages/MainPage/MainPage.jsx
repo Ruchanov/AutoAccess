@@ -1,20 +1,11 @@
 import React from 'react';
 import './MainPage.css';
-import logo from './logo.png'
 import logo2_1 from './logo2_1.png'
+import NavBar from "../../components/NavBar/NavBar";
 const MainPage = () => {
     return (
         <div className="main-page">
-            <nav className="top-nav">
-                <img className="logo" src={logo} alt="Luxury Car"/>
-                <div className="nav-links">
-                    <a href="#!">Cars</a>
-                    <a href="#!">Spare Parts</a>
-                    <a href="#!">Repairs & Services</a>
-                    <a href="#!">About</a>
-                    <a href="#!">Login</a>
-                </div>
-            </nav>
+            <NavBar></NavBar>
             <header className="hero">
                 <div className="hero-text">
                     <h1>AUTO ACCESS</h1>

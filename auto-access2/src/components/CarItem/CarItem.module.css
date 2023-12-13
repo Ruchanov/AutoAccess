@@ -1,0 +1,30 @@
+.carItem {
+    border: 1px solid #ddd; /* рамка вокруг каждого элемента */
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px; /* скругление углов */
+    background-color: #fff; /* белый фон для элемента */
+    display: flex;
+    align-items: center; /* выравнивание элементов по центру */
+    width: 60%;
+    margin-left: auto;  /* автоматический отступ слева */
+    margin-right: auto;
+}
+
+.carInfo {
+    margin-left: 15px;
+    font-size: 28px;
+    max-width: calc(100% - 295px); /* Уменьшить ширину, учитывая изображение и отступ */
+    flex-grow: 1;
+    overflow-wrap: break-word; /* Переносит слова, если они не помещаются целиком */
+    word-wrap: break-word;
+    margin-right: 130px;
+}
+.carImage {
+    width: 280px; /* фиксированная ширина изображения */
+    height: 170px; /* автоматическая высота, сохраняющая пропорции */
+    border-radius: 4px; /* скругление углов изображения */
+}
+
+
+/* Дополнительные стили, если нужно */

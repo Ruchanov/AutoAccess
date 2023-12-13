@@ -1,6 +1,7 @@
 import './App.css';
 // import {useState} from "react";
 import MainPage from "./pages/MainPage/MainPage";
+import CarListPage from "./pages/CarListPage/CarListPage";
 
 function App() {
   // const[cars, setCars] = useState([
@@ -11,7 +12,8 @@ function App() {
   // ])
   return (
     <div className="App">
-      <MainPage></MainPage>
+      {/*<MainPage></MainPage>*/}
+        <CarListPage></CarListPage>
     </div>
   );
 }
