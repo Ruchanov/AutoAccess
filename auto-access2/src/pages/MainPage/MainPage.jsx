@@ -2,7 +2,13 @@ import React from 'react';
 import './MainPage.css';
 import logo2_1 from './logo2_1.png'
 import NavBar from "../../components/NavBar/NavBar";
+import {useNavigate} from "react-router-dom";
 const MainPage = () => {
+    let navigate = useNavigate();
+
+    function handleClick() {
+        navigate('/cars'); // Перенаправление на маршрут /cars
+    }
     return (
         <div className="main-page">
             <NavBar></NavBar>
@@ -12,7 +18,7 @@ const MainPage = () => {
                     <p>WORLD OF CARS</p>
                     <p>FIND YOUR DREAM CAR HERE</p>
                     <div className="hero-buttons">
-                        <button>Buy Car</button>
+                        <button onClick={handleClick}>Buy a Car</button>
                         <button>List Your Car</button>
                     </div>
                 </div>

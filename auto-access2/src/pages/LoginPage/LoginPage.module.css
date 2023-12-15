@@ -1,0 +1,9 @@
+.loginContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #1a1a1a; /* Цвет фона, аналогичный главной странице */
+    color: #fff; /* Белый текст */
+    min-height: 100vh; /* Минимальная высота на весь экран */
+}

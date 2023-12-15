@@ -1,29 +1,59 @@
 .carItem {
-    border: 1px solid #ddd; /* рамка вокруг каждого элемента */
-    padding: 15px;
-    margin-bottom: 10px;
-    border-radius: 4px; /* скругление углов */
-    background-color: #fff; /* белый фон для элемента */
-    display: flex;
-    align-items: center; /* выравнивание элементов по центру */
-    width: 60%;
-    margin-left: auto;  /* автоматический отступ слева */
-    margin-right: auto;
+    background-color: #242424; /* Темный фон для карточки автомобиля */
+    color: #fff; /* Белый текст */
+    border-radius: 10px; /* Скругленные углы для карточки */
+    overflow: hidden; /* Скрывает всё что выходит за границы карточки */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Тень для карточки */
+    transition: transform 0.3s ease; /* Анимация для наведения */
+}
+
+.carItem:hover {
+    transform: translateY(-5px); /* Поднимает карточку при наведении */
+}
+
+.carImage {
+    width: 100%; /* Полная ширина карточки */
+    height: 200px; /* Фиксированная высота для изображения */
+    object-fit: cover; /* Обрезает изображение по размеру контейнера */
 }
 
 .carInfo {
-    margin-left: 15px;
-    font-size: 28px;
-    max-width: calc(100% - 295px); /* Уменьшить ширину, учитывая изображение и отступ */
-    flex-grow: 1;
-    overflow-wrap: break-word; /* Переносит слова, если они не помещаются целиком */
-    word-wrap: break-word;
-    margin-right: 130px;
-}
-.carImage {
-    width: 280px; /* фиксированная ширина изображения */
-    height: 170px; /* автоматическая высота, сохраняющая пропорции */
-    border-radius: 4px; /* скругление углов изображения */
+    padding: 15px; /* Внутренний отступ для информации об автомобиле */
 }
 
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px; /* Отступ снизу для заголовка */
+}
 
+.header h2 {
+    margin: 0;
+    font-size: 1.5rem; /* Размер шрифта для названия автомобиля */
+}
+
+.likeIcon {
+    cursor: pointer;
+}
+
+.liked {
+    color: #e63946; /* Цвет "лайка" */
+}
+
+.details p {
+    margin: 5px 0; /* Отступы для параграфов с деталями */
+    font-size: 0.9rem; /* Размер шрифта для деталей */
+}
+
+.footer {
+    padding-top: 10px; /* Отступ сверху для футера */
+    border-top: 1px solid #393939; /* Линия для визуального разделения */
+    text-align: right;
+}
+
+.footer p {
+    margin: 0; /* Убрать стандартный отступ для параграфа */
+    font-weight: 500; /* Немного утолщенный шрифт для цены */
+    font-size: 1.1rem; /* Больший размер шрифта для цены */
+}

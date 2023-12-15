@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import CarItem from "../../components/CarItem/CarItem";
 import NavBar from "../../components/NavBar/NavBar";
 import styles from './CarListPage.module.css';
+import {Link} from "react-router-dom";
 
 const CarListPage = () => {
     const [cars, setCars] = useState([]);
@@ -21,10 +22,16 @@ const CarListPage = () => {
             <NavBar></NavBar>
             <h1 className={styles.title}>Список автомобилей</h1>
             <ul className={styles.list}>
+                {/*{cars.map(car => (*/}
+                {/*    <CarItem key={car.id} car={car}></CarItem>*/}
+                {/*))}*/}
                 {cars.map(car => (
-                    <CarItem key={car.id} car={car}></CarItem>
+                    <Link to={`/cars/${car.id}`} key={car.id}>
+                        <CarItem key={car.id} car={car}></CarItem>
+                    </Link>
                 ))}
             </ul>
+
         </div>)
 };
 
