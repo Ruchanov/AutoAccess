@@ -66,4 +66,49 @@
     text-align: right; /* Выравнивание текста по правому краю */
 }
 
-/* Дополнительные стили для адаптивности и анимации могут быть добавлены по мере необходимости */
+.searchAndFilterContainer {
+    display: flex;
+    justify-content: space-between; /* Распределение элементов на всю ширину контейнера */
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* или другое значение в зависимости от вашего дизайна */
+    margin: 20px auto; /* Центрирование контейнера */
+}
+
+.searchForm {
+    flex-grow: 2; /* Позволяет полю поиска расти и заполнять доступное пространство */
+    margin-right: 10px; /* Отступ справа от поля поиска */
+}
+
+.searchForm input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+}
+
+.filterButton {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Цвет кнопки */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    flex-shrink: 0; /* Предотвращает уменьшение кнопки при уменьшении окна браузера */
+}
+
+.filterButton:hover {
+    background-color: #45a049;
+}
+
+/* Стили для адаптивного дизайна */
+@media (max-width: 768px) {
+    .searchAndFilterContainer {
+        flex-direction: column;
+    }
+
+    .searchForm {
+        width: 100%; /* Полная ширина на маленьких экранах */
+        margin-bottom: 10px;
+    }
+}

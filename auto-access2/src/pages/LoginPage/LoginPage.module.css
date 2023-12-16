@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    background-color: #1a1a1a; /* Цвет фона, аналогичный главной странице */
-    color: #fff; /* Белый текст */
-    min-height: 100vh; /* Минимальная высота на весь экран */
+    background-color: rgb(7,14,23); /* Dark background color, similar to the main page */
+    color: white; /* White text for better visibility on dark background */
+    min-height: 100vh; /* Minimum height to cover the entire screen */
 }
