@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import styles from './CarDetailPage.module.css';
+import NavBar from "../../components/NavBar/NavBar";
 
 const CarDetailPage = () => {
     const { id } = useParams();
@@ -12,12 +14,24 @@ const CarDetailPage = () => {
             .catch(error => console.error('Error fetching car details:', error));
     }, [id]);
 
-    if (!car) return <div>Loading...</div>;
+    if (!car) return <div className={styles.loading}>Loading...</div>;
 
     return (
-        <div>
-            <h1>{car.make} {car.model}</h1>
-            {/* Другие детали машины */}
+        <div className={styles.container}>
+            <NavBar></NavBar>
+            <h1 className={styles.title}>{car.marka} {car.model}</h1>
+            <div className={styles.detailsWrapper}>
+                <div className={styles.details}>
+                    <img src={car.image} alt={`${car.marka} ${car.model}`} className={styles.carImage} />
+                    <p><strong>Year:</strong> {car.year}</p>
+                    <p><strong>Price:</strong> {car.price}тг</p>
+                    <p><strong>Mileage:</strong> {car.mileage} km</p>
+                    <p><strong>Body Type:</strong> {car.body_type}</p>
+                    <p><strong>Transmission:</strong> {car.transmission}</p>
+                    <p><strong>Description:</strong> {car.description}</p>
+                    <p><strong>Phone Number:</strong> {car.phoneNumber}</p>
+                </div>
+            </div>
         </div>
     );
 };

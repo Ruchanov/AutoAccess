@@ -6,8 +6,12 @@ import {useNavigate} from "react-router-dom";
 const MainPage = () => {
     let navigate = useNavigate();
 
+
     function handleClick() {
         navigate('/cars'); // Перенаправление на маршрут /cars
+    }
+    function handleClick2() {
+        navigate('/createCar'); // Перенаправление на маршрут /cars
     }
     return (
         <div className="main-page">
@@ -19,7 +23,7 @@ const MainPage = () => {
                     <p>FIND YOUR DREAM CAR HERE</p>
                     <div className="hero-buttons">
                         <button onClick={handleClick}>Buy a Car</button>
-                        <button>List Your Car</button>
+                        <button onClick={handleClick2}>List Your Car</button>
                     </div>
                 </div>
                 <div className="hero-image">

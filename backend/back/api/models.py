@@ -13,6 +13,6 @@ class Car(models.Model):
     body_type = models.CharField(max_length=255)
     transmission = models.CharField(max_length=255)
     description = models.TextField()
-    image = models.ImageField()
+    image = models.ImageField(upload_to='cars/', blank=True, null=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='posts')
     phoneNumber = models.CharField(max_length=11)

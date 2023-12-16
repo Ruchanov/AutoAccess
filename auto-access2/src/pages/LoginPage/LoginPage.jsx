@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState} from 'react';
 import styles from './LoginPage.module.css';
 import LoginForm from "../../components/LoginForm/LoginForm";
 import RegisterForm from "../../components/RegisterForm/RegisterForm";
 import NavBar from "../../components/NavBar/NavBar";
+import { useNavigate } from 'react-router-dom';
+import { jwtDecode } from 'jwt-decode';
 
 const LoginPage = () => {
     const [isLogin, setIsLogin] = useState(true);
@@ -10,7 +12,7 @@ const LoginPage = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [passwordConfirmation, setPasswordConfirmation] = useState('');
-
+    const history = useNavigate();
     const handleLogin = (e) => {
         e.preventDefault();
         fetch('http://127.0.0.1:8000/token/', {
@@ -29,7 +31,10 @@ const LoginPage = () => {
             .then(data => {
                 localStorage.setItem('access_token', data.access);
                 localStorage.setItem('refresh_token', data.refresh);
-                console.log("uspeshno")
+                const decoded = jwtDecode(data.access);
+                localStorage.setItem('user_id', decoded.user_id);
+                console.log(localStorage);
+                history('/cars');
                 // Здесь можно добавить перенаправление на другую страницу
             })
             .catch(error => {

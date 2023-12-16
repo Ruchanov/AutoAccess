@@ -11,8 +11,10 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
+from datetime import timedelta
 from pathlib import Path
 import os
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -72,6 +74,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://192.168.1.113:3000",
 ]
 
+
 ROOT_URLCONF = 'back.urls'
 
 TEMPLATES = [
@@ -102,6 +105,7 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
 
 
 # Password validation
