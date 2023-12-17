@@ -33,9 +33,8 @@ const LoginPage = () => {
                 localStorage.setItem('refresh_token', data.refresh);
                 const decoded = jwtDecode(data.access);
                 localStorage.setItem('user_id', decoded.user_id);
-                console.log(localStorage);
+                setIsLogin(true);// Устанавливаем статус входа в систему
                 history('/cars');
-                // Здесь можно добавить перенаправление на другую страницу
             })
             .catch(error => {
                 console.error('Error during login:', error);
@@ -71,7 +70,7 @@ const LoginPage = () => {
     };
     return (
         <div className={styles.loginContainer}>
-            <NavBar></NavBar>
+            <NavBar setIsLoggedIn={setIsLogin} />
             {isLogin ? (
                 <LoginForm
                     onLogin={handleLogin}

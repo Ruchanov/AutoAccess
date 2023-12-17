@@ -18,19 +18,19 @@
 }
 
 .carInfo {
-    padding: 15px; /* Внутренний отступ для информации об автомобиле */
+    padding: 15px;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px; /* Отступ снизу для заголовка */
+    margin-bottom: 10px;
 }
 
 .header h2 {
     margin: 0;
-    font-size: 1.5rem; /* Размер шрифта для названия автомобиля */
+    font-size: 1.5rem;
 }
 
 .likeIcon {
@@ -38,22 +38,22 @@
 }
 
 .liked {
-    color: #e63946; /* Цвет "лайка" */
+    color: #e63946;
 }
 
 .details p {
-    margin: 5px 0; /* Отступы для параграфов с деталями */
-    font-size: 0.9rem; /* Размер шрифта для деталей */
+    margin: 5px 0;
+    font-size: 0.9rem;
 }
 
 .footer {
-    padding-top: 10px; /* Отступ сверху для футера */
-    border-top: 1px solid #393939; /* Линия для визуального разделения */
+    padding-top: 10px;
+    border-top: 1px solid #393939;
     text-align: right;
 }
 
 .footer p {
-    margin: 0; /* Убрать стандартный отступ для параграфа */
-    font-weight: 500; /* Немного утолщенный шрифт для цены */
-    font-size: 1.1rem; /* Больший размер шрифта для цены */
+    margin: 0;
+    font-weight: 500;
+    font-size: 1.1rem;
 }

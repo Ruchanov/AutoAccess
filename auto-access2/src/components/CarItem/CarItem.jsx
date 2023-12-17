@@ -1,24 +1,30 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { FaHeart } from 'react-icons/fa';
 import styles from './CarItem.module.css';
+import { useNavigate } from 'react-router-dom';
 
-const CarItem = ({ car }) => {
-    const [isLiked, setIsLiked] = useState(false);
+const CarItem = ({ car, isFavorite, onLikeClick }) => {
+    const navigate = useNavigate();
 
-    const handleLikeClick = () => {
-        setIsLiked(!isLiked);
+    const handleDetailClick = () => {
+        navigate(`/cars/${car.id}`);
+    };
+
+    const handleLikeClick = (e) => {
+        e.stopPropagation(); // Останавливаем всплытие события
+        onLikeClick(car.id);
     };
 
     return (
-        <div className={styles.carItem}>
+        <div className={styles.carItem} onClick={handleDetailClick}>
             {car.image && (
-                <img className={styles.carImage} src={car.image} alt={`${car.make} ${car.model}`} />
+                <img className={styles.carImage} src={car.image} alt={`${car.marka} ${car.model}`} />
             )}
             <div className={styles.carInfo}>
                 <div className={styles.header}>
                     <h2 className={styles.marka}>{car.marka} {car.model}</h2>
                     <span
-                        className={`${styles.likeIcon} ${isLiked ? styles.liked : ''}`}
+                        className={`${styles.likeIcon} ${isFavorite ? styles.liked : ''}`}
                         onClick={handleLikeClick}
                     >
                         <FaHeart />
