@@ -4,9 +4,9 @@ import styles from './LoginForm.module.css';
 const LoginForm = ({ onLogin, onToggle, username, setUsername, password, setPassword }) => {
     return (
         <form className={styles.loginForm} onSubmit={onLogin}>
-            <h2 className={styles.loginTitle}>Вход в систему</h2>
+            <h2 className={styles.loginTitle}>LOGIN</h2>
             <div className={styles.inputGroup}>
-                <label htmlFor="username">Имя пользователя</label>
+                <label htmlFor="username">Username</label>
                 <input
                     type="text"
                     id="username"
@@ -16,7 +16,7 @@ const LoginForm = ({ onLogin, onToggle, username, setUsername, password, setPass
                 />
             </div>
             <div className={styles.inputGroup}>
-                <label htmlFor="password">Пароль</label>
+                <label htmlFor="password">Password</label>
                 <input
                     type="password"
                     id="password"
@@ -25,9 +25,9 @@ const LoginForm = ({ onLogin, onToggle, username, setUsername, password, setPass
                     required
                 />
             </div>
-            <button type="submit" className={styles.loginButton}>Войти</button>
+            <button type="submit" className={styles.loginButton}>Login</button>
             <p className={styles.toggleForm}>
-                Еще не зарегистрированы? <button type="button" onClick={onToggle}>Зарегистрироваться</button>
+                Not registered yet?    <button type="button" onClick={onToggle}>Register</button>
             </p>
         </form>
     );

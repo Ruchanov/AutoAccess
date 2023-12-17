@@ -45,7 +45,6 @@ const CarListPage = () => {
 
     useEffect(() => {
         fetchFavorites();
-        // Повторная загрузка избранных после каждого изменения в избранном
     }, [favoriteCars]);
 
     const toggleFilter = () => {
@@ -84,7 +83,6 @@ const CarListPage = () => {
                 if (!response.ok) {
                     throw new Error('Ошибка при обновлении избранного');
                 }
-                // После успешного запроса обновляем локальный список избранных
                 if (url === 'add_to_favorites') {
                     updatedFavorites.add(carId);
                 } else {

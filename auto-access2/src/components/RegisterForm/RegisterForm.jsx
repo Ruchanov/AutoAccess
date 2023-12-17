@@ -4,9 +4,9 @@ import styles from './RegisterForm.module.css';
 const RegisterForm = ({ onRegister, onToggle, username, setUsername, email, setEmail, password, setPassword, passwordConfirmation, setPasswordConfirmation }) => {
     return (
         <form className={styles.loginForm} onSubmit={onRegister}>
-            <h2 className={styles.loginTitle}>Регистрация</h2>
+            <h2 className={styles.loginTitle}>Register</h2>
             <div className={styles.inputGroup}>
-                <label htmlFor="register-username">Имя пользователя</label>
+                <label htmlFor="register-username">Username</label>
                 <input
                     type="text"
                     id="register-username"
@@ -16,7 +16,7 @@ const RegisterForm = ({ onRegister, onToggle, username, setUsername, email, setE
                 />
             </div>
             <div className={styles.inputGroup}>
-                <label htmlFor="register-email">Электронная почта</label>
+                <label htmlFor="register-email">Email</label>
                 <input
                     type="email"
                     id="register-email"
@@ -26,7 +26,7 @@ const RegisterForm = ({ onRegister, onToggle, username, setUsername, email, setE
                 />
             </div>
             <div className={styles.inputGroup}>
-                <label htmlFor="register-password">Пароль</label>
+                <label htmlFor="register-password">Password</label>
                 <input
                     type="password"
                     id="register-password"
@@ -36,7 +36,7 @@ const RegisterForm = ({ onRegister, onToggle, username, setUsername, email, setE
                 />
             </div>
             <div className={styles.inputGroup}>
-                <label htmlFor="register-password-confirm">Подтвердите пароль</label>
+                <label htmlFor="register-password-confirm">Confirm password</label>
                 <input
                     type="password"
                     id="register-password-confirm"
@@ -45,9 +45,9 @@ const RegisterForm = ({ onRegister, onToggle, username, setUsername, email, setE
                     required
                 />
             </div>
-            <button type="submit" className={styles.loginButton}>Зарегистрироваться</button>
+            <button type="submit" className={styles.loginButton}>Register</button>
             <p className={styles.toggleForm}>
-                Уже зарегистрированы? <button type="button" onClick={onToggle}>Войти</button>
+                Already registered? <button type="button" onClick={onToggle}>Login</button>
             </p>
         </form>
     );

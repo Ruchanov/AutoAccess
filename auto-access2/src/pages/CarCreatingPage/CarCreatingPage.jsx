@@ -15,7 +15,7 @@ const CarCreatingPage = () => {
         body_type: '',
         transmission: '',
         description: '',
-        image: null,  // Предполагаем, что у вас будет загрузка изображений
+        image: null,
         phoneNumber: '',
     });
     const navigate = useNavigate();
@@ -39,11 +39,9 @@ const CarCreatingPage = () => {
         for (let [key, value] of data.entries()) {
             console.log(key, value);
         }
-        // Убедитесь, что эндпоинт и заголовки правильные
         fetch('http://127.0.0.1:8000/cars/create/', {
             method: 'POST',
             headers: {
-                // Токен авторизации предполагается валидным
                 'Authorization': `Bearer ${localStorage.getItem('access_token')}`,
             },
             body: data,
@@ -57,7 +55,6 @@ const CarCreatingPage = () => {
             })
             .then(data => {
                 console.log('Success:', data);
-                // Действия после успешной отправки, например, перенаправление
             })
             .catch((error) => {
                 console.error('Error:', error);
