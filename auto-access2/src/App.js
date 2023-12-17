@@ -7,6 +7,7 @@ import CarDetailPage from "./pages/CarDetailPage/CarDetailPage";
 import CarCreatingPage from "./pages/CarCreatingPage/CarCreatingPage";
 import LikesPage from "./pages/LikesPage/LikesPage";
 import ProfilePage from "./pages/ProfilePage/ProfilePage";
+import AboutPage from "./pages/AboutPage/AboutPage";
 
 
 
@@ -22,6 +23,7 @@ function App() {
                     <Route path="/createCar" element={<CarCreatingPage />} />
                     <Route path="/likes" element={<LikesPage />} />
                     <Route path="/profile" element={<ProfilePage />} />
+                    <Route path="/about" element={<AboutPage />} />
                 </Routes>
             </BrowserRouter>
         </div>

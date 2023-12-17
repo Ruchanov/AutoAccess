@@ -35,9 +35,9 @@ const NavBar = () => {
             </Link>
             <div className={styles.navLinks}>
                 <Link to="/cars">Cars</Link>
-                <a href="#!">Spare Parts</a>
+                <a href="https://wa.me/7776887839">Support</a>
                 <Link to='/likes'>Likes</Link>
-                <a href="#!">About</a>
+                <Link to="/about">About</Link>
                 {isLoggedIn ? (
                     <>
                         <Link to="/profile">My Profile</Link>
