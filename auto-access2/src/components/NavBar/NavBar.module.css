@@ -22,3 +22,19 @@
 .navLinks a:hover {
     color: #dddddd;
 }
+
+.logoutButton {
+    background-color: #ff4500; /* красный цвет кнопки */
+    border: none; /* убираем границу */
+    padding: 10px 20px; /* внутренние отступы */
+    margin-left: 30px; /* отступ слева */
+    color: white; /* цвет текста */
+    border-radius: 5px; /* скругление углов */
+    cursor: pointer; /* тип курсора при наведении */
+    outline: none; /* убираем контур при фокусе */
+    transition: background-color 0.3s; /* анимация фона */
+}
+
+.logoutButton:hover {
+    background-color: #e63900; /* темно-красный цвет при наведении */
+}

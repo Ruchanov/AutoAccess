@@ -16,3 +16,11 @@ class Car(models.Model):
     image = models.ImageField(upload_to='cars/', blank=True, null=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='posts')
     phoneNumber = models.CharField(max_length=11)
+
+
+class Favorite(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    car = models.ForeignKey(Car, on_delete=models.CASCADE)
+
+    class Meta:
+        unique_together = ('user', 'car')

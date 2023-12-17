@@ -1,0 +1,75 @@
+/* LikesPage.module.css */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #1a1a1a; /* Цвет фона, аналогичный другим страницам */
+    color: #fff; /* Белый текст */
+    min-height: 100vh; /* Минимальная высота на весь экран */
+}
+
+.h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.carsList {
+    width: 100%;
+    max-width: 1200px; /* Максимальная ширина списка */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Адаптивные колонки */
+    gap: 20px; /* Расстояние между элементами */
+    display: flex;
+    flex-direction: row; /* Элементы выстраиваются в строку */
+    flex-wrap: wrap; /* Перенос элементов на следующую строку, если не хватает места */
+    justify-content: center; /* Горизонтальное выравнивание элементов по центру */
+    align-items: center; /* Вертикальное выравнивание элементов по центру */
+    gap: 20px; /* Расстояние между элементами */
+    padding: 20px;
+}
+
+/* CarItem.module.css */
+.carItem {
+    background-color: #333; /* Цвет фона для каждого элемента списка */
+    padding: 15px;
+    border-radius: 8px; /* Скругление углов */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Тень */
+    cursor: pointer; /* Указатель при наведении */
+}
+
+.carImage {
+    width: 100%; /* Полная ширина */
+    height: auto; /* Автоматическая высота */
+    border-radius: 4px; /* Скругление углов изображения */
+    object-fit: cover; /* Обрезка изображения по размеру блока */
+}
+
+.carInfo {
+    padding: 10px 0; /* Отступы сверху и снизу */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between; /* Распределение пространства между элементами */
+    align-items: center;
+}
+
+.likeIcon {
+    cursor: pointer; /* Курсор указывает, что это кликабельный элемент */
+    transition: transform 0.2s; /* Плавное изменение при наведении */
+}
+
+.liked {
+    color: red; /* Цвет сердца при "лайке" */
+    transform: scale(1.1); /* Увеличение иконки */
+}
+
+.details {
+    margin: 10px 0; /* Отступы между деталями */
+}
+
+.footer {
+    font-weight: bold;
+    text-align: right; /* Выравнивание текста по правому краю */
+}
