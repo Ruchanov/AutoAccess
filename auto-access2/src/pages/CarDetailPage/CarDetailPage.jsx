@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import styles from './CarDetailPage.module.css';
 import NavBar from "../../components/NavBar/NavBar";
+import CreditCalculator from "../../components/CreditCalculator/CreditCalculator";
 
 const CarDetailPage = () => {
     const { id } = useParams();
@@ -30,7 +31,9 @@ const CarDetailPage = () => {
                     <p><strong>Transmission:</strong> {car.transmission}</p>
                     <p><strong>Description:</strong> {car.description}</p>
                     <p><strong>Phone Number:</strong> {car.phoneNumber}</p>
+                    <CreditCalculator defaultPrice={car.price} />
                 </div>
+
             </div>
         </div>
     );
