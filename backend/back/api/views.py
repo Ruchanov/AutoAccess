@@ -122,7 +122,6 @@ def get_favorites(request):
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])
 def user_posts(request):
-    # Получаем все посты текущего пользователя
     posts = Car.objects.filter(user=request.user)
-    serializer = CarSerializer(posts, many=True)
+    serializer = CarSerializer(posts, many=True, context={'request': request})
     return Response(serializer.data)

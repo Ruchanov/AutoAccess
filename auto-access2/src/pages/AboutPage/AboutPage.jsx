@@ -29,7 +29,7 @@ const AboutPage = () => {
                 Secure Transactions:
                 At AutoHub, we prioritize the safety and security of our users. Whether you're buying or selling, our platform ensures secure transactions and reliable communication between parties.
 
-                Join us at AutoHub and embark on a journey where your automotive dreams come to life. Find, sell, and connect with like-minded individuals who share your passion for cars. AutoHub - Where Every Drive Begins!
+                Join us at AutoAccess and embark on a journey where your automotive dreams come to life. Find, sell, and connect with like-minded individuals who share your passion for cars. AutoHub - Where Every Drive Begins!
 
             </p>
             {/* Добавьте другие сведения о компании здесь */}

@@ -14,3 +14,8 @@ class CarSerializer(serializers.ModelSerializer):
             return request.build_absolute_uri(obj.image.url)
         else:
             return None
+
+    def to_representation(self, instance):
+        representation = super().to_representation(instance)
+        representation['image_url'] = self.get_image_url(instance)
+        return representation

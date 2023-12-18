@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import CarItem from "../../components/CarItem/CarItem";
 import NavBar from "../../components/NavBar/NavBar";
-
+import styles from './ProfilePage.module.css';
 const ProfilePage = () => {
     const [user, setUser] = useState(null);
     const [userPosts, setUserPosts] = useState([]);
@@ -53,19 +53,31 @@ const ProfilePage = () => {
     }, []);
 
     return (
-        <div>
-            <NavBar></NavBar>
-            {user && (
-                <div>
-                    <h1>Welcome, {user.username}</h1>
-                    <p>Email: {user.email}</p>
+        <div className={styles.profilePage}>
+            <NavBar />
+            <div className={styles.profileContainer}>
+                <div className={styles.userInfoSection}>
+                    {user && (
+                        <div className={styles.userInfo}>
+                            <h1>Welcome, {user.username}</h1>
+                            <p>Email: {user.email}</p>
+                        </div>
+                    )}
                 </div>
-            )}
-            <h2>Your Posts</h2>
-            <Link to="/createCar">Create Post</Link>
-            {userPosts.map((post) => (
-                <CarItem key={post.id} car={post} />
-            ))}
+                <div className={styles.postsSection}>
+                    <h2 className={styles.sectionTitle}>Your Posts</h2>
+                    <Link to="/createCar" className={styles.createPostButton}>Create New Post</Link>
+                    <div className={styles.postsContainer}>
+                        {userPosts.length > 0 ? (
+                            userPosts.map((post) => (
+                                <CarItem key={post.id} car={post} />
+                            ))
+                        ) : (
+                            <p>You have no posts yet.</p>
+                        )}
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };

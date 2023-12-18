@@ -1,7 +1,8 @@
-from requests import Response
+from rest_framework.response import Response
 from rest_framework import generics
 from rest_framework.decorators import permission_classes, api_view
 from rest_framework.permissions import IsAuthenticated
+from rest_framework import status
 
 from .serializer import UserRegistrationSerializer, CustomTokenObtainPairSerializer, UserSerializer
 from rest_framework_simplejwt.views import TokenObtainPairView
@@ -19,6 +20,5 @@ class CustomTokenObtainPairView(TokenObtainPairView):
 @permission_classes([IsAuthenticated])
 def get_user_profile(request):
     user = request.user
-    # Здесь можно сериализовать объект пользователя, чтобы отправить его данные на клиент
-    serializer = UserSerializer(user)  # Предполагается, что у вас есть сериализатор UserSerializer
-    return Response(serializer.data)
+    serializer = UserSerializer(user)
+    return Response(serializer.data, status=status.HTTP_200_OK)
