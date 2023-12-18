@@ -17,3 +17,8 @@
 ### We also have support when you click it, you automatically switch to whatsapp and you can write to the manager
 ### We also have an “about” page when you click you can find out about our site.
 
+
+# Technologies used:
+### react.js
+### react-router-dom
+### Django
