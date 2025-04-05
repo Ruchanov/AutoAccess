@@ -118,6 +118,13 @@ def get_favorites(request):
     serializer = CarSerializer(cars, many=True, context={'request': request})
     return Response(serializer.data)
 
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def user_posts(request):
+    posts = Car.objects.filter(user=request.user)
+    serializer = CarSerializer(posts, many=True, context={'request': request})
+    return Response(serializer.data)
+
 
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])

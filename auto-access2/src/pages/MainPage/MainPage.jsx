@@ -3,6 +3,7 @@ import './MainPage.css';
 import logo2_1 from './logo2_1.png'
 import NavBar from "../../components/NavBar/NavBar";
 import {useNavigate} from "react-router-dom";
+// import NavBar from "../../components/NavBar/NavBar";
 const MainPage = () => {
     let navigate = useNavigate();
 

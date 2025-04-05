@@ -1,4 +1,3 @@
-// FilterForm.js
 import React from 'react';
 import styles from './FilterForm.module.css'
 
